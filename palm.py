@@ -5,7 +5,7 @@ from langchain.embeddings import HuggingFaceInstructEmbeddings
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 import os
-api_key="AIzaSyA9f-G8ji_LoRukSqXFfdVHrjf6ODtF7Do"
+api_key=""
 llm = GooglePalm(google_api_key=api_key, temperature=0)
 instructor_embeddings = HuggingFaceInstructEmbeddings(model_name="hkunlp/instructor-large")
 vectordb_file_path = "faiss_index"
